@@ -1,0 +1,156 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+
+
+
+
+body{
+  
+    color: #3E363F;
+  
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   background-image: url("imagenes/fondo1.png") ; 
+}
+
+/*#contenedor {
+    background-color: pink;
+    width: 60vw;
+    height: 50vh;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}*/
+#contenedor{
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+      0 10px 10px rgba(0,0,0,0.22);
+  }
+.titulo{
+    font-family: 'Courgette', cursive ;
+    font-size: 35px;
+   color: rgb(18, 19, 19);
+}
+.completa{
+    font-family: 'Lilita One', sans-serif;
+}
+.redondeado{
+    border-radius: 50px;
+    background-color: rgb(233, 159, 183);
+}
+.mensaje{
+    font-family: 'Peralta', serif;
+    font-size: 10px;
+}
+.diario{
+    font-family: 'Lilita One', sans-serif;
+}
+.hora{
+    font-family: 'Lilita One', sans-serif;
+}
+.mant{
+    font-family: 'Lilita One', sans-serif;
+}
+#calculadora{
+    background: rgb(255, 255, 255);
+    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-image: url("imagenes/bebe.jpg");
+    background-size: 115px;
+
+    background-position:  center;
+  
+}
+
+#detalle{
+
+ 
+    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: #07010e;
+    background-color: rgb(231, 137, 203);
+    
+   
+}
+.calculo{
+    font-family: 'Courgette', cursive ;
+}
+.lista{
+    font-family: 'Lilita One', sans-serif;
+
+}
+li{
+    line-height: 2.1;
+}
+.contenido{
+    /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 40px;
+  
+}
+
+ 
+
+input {
+	width: 70%;
+    padding: 12px 15px;
+    border: none;
+    font-family: 'Sevillana', cursive;
+    font-size: 15px;
+}
+
+button {
+  font-size: 15px;
+	font-weight: bold;
+	padding: 12px 45px;
+	border-radius: 30px;
+	background-color: #da5370;
+	border: 1px solid #FF416C;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: transform 20ms ease-in;
+    font-family: 'Urbanist', sans-serif;
+}
+
+
+button:active {
+	transform: scale(0.95);
+}
+button:hover {
+    background-color:rgb(138, 22, 57);
+    transition: 0.7s;
+}
+#error{
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+.resultado{
+    color: #0A81D1;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: none;
+}
